@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Майстер Козак — Сервіс будівельних послуг</title>
+  <meta name="description" content="Майстер Козак — сервіс будівельних послуг: електрика, генератори, інвертори, зарядні станції, газифікація, зварювальні та будівельні роботи. Швидко / Надійно / Професійно." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23e11212'/%3E%3Cpath d='M16 5l3 6 6 .9-4.5 4.3 1 6.2L16 25.7 10.5 22.4l1-6.2L7 11.9 13 11z' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="Козак — на головну">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="40" height="40">
+            <rect width="40" height="40" rx="9" fill="#e11212"/>
+            <path d="M20 6l3.6 7.4L32 14.5l-5.8 5.5 1.4 8L20 24.1 12.4 28l1.4-8L8 14.5l8.4-1.1z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="logo__text">КОЗАК</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">Компанія</a>
+        <a href="#services" class="nav__link">Наші послуги</a>
+        <a href="#advantages" class="nav__link">Переваги</a>
+        <a href="#vacancy" class="nav__link">Вакансії</a>
+        <a href="#contacts" class="nav__link">Контакти</a>
+      </nav>
+
+      <a href="tel:0986675972" class="btn btn--sm header__phone">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1z"/></svg>
+        098 667 59 72
+      </a>
+
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <img class="hero__bg" src="assets/hero-bg.jpg" alt="Сучасний будинок на тлі заходу сонця та майстер у касці" fetchpriority="high" />
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__inner">
+      <p class="hero__eyebrow reveal">Будуємо якість. Створюємо комфорт.</p>
+      <h1 class="hero__title reveal" style="--d:.1s">
+        Будівельні послуги<br>
+        <span class="accent">під ключ у Дніпрі</span>
+      </h1>
+      <div class="hero__slogan reveal" style="--d:.2s">
+        <span>Швидко</span><i>/</i><span>Надійно</span><i>/</i><span>Професійно</span>
+      </div>
+      <p class="hero__lead reveal" style="--d:.3s">
+        Повний спектр будівельних та інженерних послуг під ключ. Електрика, генератори,
+        інвертори, газифікація, зварювання та будівництво — з гарантією якості.
+      </p>
+      <div class="hero__cta reveal" style="--d:.4s">
+        <a href="tel:0986675972" class="btn btn--primary">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1z"/></svg>
+          Подзвонити
+        </a>
+        <a href="https://t.me/kozak_servis" target="_blank" rel="noopener" class="btn btn--white">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 2.9 11.6c-1 .4-1 1.8.1 2.1l4.8 1.5 1.8 5.7c.3.9 1.4 1.1 2 .4l2.6-2.6 4.7 3.5c.7.5 1.7.1 1.9-.7L23 5.6c.2-1-.7-1.7-1.1-1.3zM9.7 14.6l8.4-5.3-6.9 6.3-.2 3.2z"/></svg>
+          Telegram
+        </a>
+        <a href="https://wa.me/message/QPN5Q3EQSAKFM1" target="_blank" rel="noopener" class="btn btn--ghost">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.13c-.24.68-1.4 1.3-1.93 1.38-.5.07-1.12.1-1.8-.11-.42-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.36-.23.61-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.11.07.64-.17 1.32z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__text reveal">
+        <span class="section__tag">Компанія</span>
+        <h2 class="section__title">Про <span class="accent">Майстра Козака</span></h2>
+        <p>
+          Ми — команда майстрів та професіоналів, що виконує будівельні й інженерні роботи
+          будь-якої складності. Від заміни розетки до газифікації під ключ — беремося за
+          завдання повністю та відповідаємо за результат.
+        </p>
+        <p>
+          Працюємо швидко, надійно та професійно. Використовуємо якісні матеріали й сучасне
+          обладнання, надаємо гарантію на всі види робіт.
+        </p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal" style="--d:.05s">
+          <span class="stat__num" data-count="10" data-suffix="+">0</span>
+          <span class="stat__label">років досвіду</span>
+        </div>
+        <div class="stat reveal" style="--d:.15s">
+          <span class="stat__num" data-count="850" data-suffix="+">0</span>
+          <span class="stat__label">виконаних об'єктів</span>
+        </div>
+        <div class="stat reveal" style="--d:.25s">
+          <span class="stat__num" data-count="25" data-suffix="+">0</span>
+          <span class="stat__label">майстрів у команді</span>
+        </div>
+        <div class="stat reveal" style="--d:.35s">
+          <span class="stat__num" data-count="100" data-suffix="%">0</span>
+          <span class="stat__label">гарантія якості</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Наші послуги</span>
+        <h2 class="section__title">Що ми <span class="accent">робимо</span></h2>
+        <p class="section__sub">Повний перелік напрямків — оберіть потрібну послугу.</p>
+      </div>
+
+      <div class="cards" id="cards">
+        <!-- Електрика -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+          </div>
+          <h3 class="card__title">Електрика</h3>
+          <ul class="card__list">
+            <li>Заміна розеток та вимикачів</li>
+            <li>Заміна електропроводки</li>
+            <li>Встановлення електропристроїв та світильників</li>
+            <li>Аварійний ремонт електрики</li>
+            <li>Реле напруги, УЗО, безперебійники</li>
+            <li>Заземлення</li>
+          </ul>
+        </article>
+
+        <!-- Зарядні станції -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm5 3-3 6h2.2L11 17l4-7h-2.3z"/></svg>
+          </div>
+          <h3 class="card__title">Зарядні станції</h3>
+          <ul class="card__list">
+            <li>EcoFlow, Bluetti</li>
+            <li>Підключення та встановлення</li>
+            <li>Ремонт</li>
+            <li>Налаштування</li>
+            <li>Покупка під замовлення</li>
+          </ul>
+        </article>
+
+        <!-- Генератори -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4 2v6h2v-2h1a2 2 0 0 0 0-4zm2 2h1v0h-1zm5-2v6h2v-2h1v-2h-1v0h1V9z"/></svg>
+          </div>
+          <h3 class="card__title">Генератори</h3>
+          <ul class="card__list">
+            <li>Бензинові та дизельні</li>
+            <li>Підбір по кВт</li>
+            <li>Підключення до мережі / для живлення</li>
+            <li>Трифазний перемикач, встановлення АВР</li>
+            <li>Покупка під замовлення</li>
+          </ul>
+        </article>
+
+        <!-- Інвертори -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm3 3v8h5V8zm7 1v2h5V9zm0 4v2h5v-2z"/></svg>
+          </div>
+          <h3 class="card__title">Інвертори</h3>
+          <ul class="card__list">
+            <li>Prostar, LuxPower, Anenji, Anern</li>
+            <li>Підбір та підключення</li>
+            <li>Налаштування</li>
+            <li>Встановлення АВР</li>
+            <li>Покупка під замовлення</li>
+          </ul>
+        </article>
+
+        <!-- Газифікація -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2s6 5.7 6 11a6 6 0 0 1-12 0c0-2 .9-3.9 2-5.3.4 1.3 1.4 2.3 2.6 2.3 0-2.4-1.2-4.6.4-8z"/></svg>
+          </div>
+          <h3 class="card__title">Газифікація</h3>
+          <ul class="card__list">
+            <li>Газифікація під ключ</li>
+            <li>Монтаж та проектування</li>
+            <li>Узаконення газових приладів</li>
+            <li>Газові котли</li>
+            <li>Підключення</li>
+          </ul>
+        </article>
+
+        <!-- Зварювальні роботи -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m3 17 8-8 1.5 1.5L4.5 18.5zM13 7l4-4 4 4-4 4zm-1.5 8.5L13 14l3 3-1.5 1.5a2.1 2.1 0 0 1-3 0 2.1 2.1 0 0 1 0-3z"/></svg>
+          </div>
+          <h3 class="card__title">Зварювальні роботи</h3>
+          <ul class="card__list">
+            <li>Зварювання металоконструкцій</li>
+            <li>Зварювання труб</li>
+            <li>Зварювання швів</li>
+            <li>Аварійне зварювання</li>
+          </ul>
+        </article>
+
+        <!-- Будівельні роботи -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 21V10l6-4 6 4v11h-4v-6H7v6zm14 0V9l4 3v9z"/></svg>
+          </div>
+          <h3 class="card__title">Будівельні роботи</h3>
+          <ul class="card__list">
+            <li>Фасадні та кладочні роботи</li>
+            <li>Фундамент</li>
+            <li>Тротуарна плитка</li>
+            <li>Монтажні роботи</li>
+            <li>Земельні роботи</li>
+          </ul>
+        </article>
+
+        <!-- Металобаза -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 4h4v4H4zm6 3h4v4h-4zM4 10h4v4H4zm12-6h4v4h-4zm-6 9h4v4h-4zm-6 1h4v4H4zm12 0h4v4h-4z"/></svg>
+          </div>
+          <h3 class="card__title">Металобаза</h3>
+          <ul class="card__list">
+            <li>Демонтаж</li>
+            <li>Вивіз металоконструкцій</li>
+            <li>Прийом металу</li>
+          </ul>
+        </article>
+
+        <!-- Дизайнерські послуги -->
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-.8.7-1.5 1.5-1.5H16a6 6 0 0 0 6-6c0-4.4-4.5-8-10-8zM6.5 12A1.5 1.5 0 1 1 6.5 9a1.5 1.5 0 0 1 0 3zm3-4A1.5 1.5 0 1 1 9.5 5a1.5 1.5 0 0 1 0 3zm5 0A1.5 1.5 0 1 1 14.5 5a1.5 1.5 0 0 1 0 3zm3 4A1.5 1.5 0 1 1 17.5 9a1.5 1.5 0 0 1 0 3z"/></svg>
+          </div>
+          <h3 class="card__title">Дизайнерські послуги</h3>
+          <ul class="card__list">
+            <li>Дизайн-проєкти</li>
+            <li>Планувальні рішення</li>
+            <li>Підбір матеріалів</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADVANTAGES ============ -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Переваги</span>
+        <h2 class="section__title">Чому обирають <span class="accent">нас</span></h2>
+      </div>
+      <div class="adv-grid">
+        <div class="adv reveal" style="--d:.05s">
+          <div class="adv__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg>
+          </div>
+          <h3>Швидко</h3>
+          <p>Виїжджаємо оперативно та виконуємо роботи в чіткі строки.</p>
+        </div>
+        <div class="adv reveal" style="--d:.15s">
+          <div class="adv__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5zm-1 13-4-4 1.4-1.4L11 12.2l4.6-4.6L17 9z"/></svg>
+          </div>
+          <h3>Надійно</h3>
+          <p>Гарантія на всі види робіт та якісні перевірені матеріали.</p>
+        </div>
+        <div class="adv reveal" style="--d:.25s">
+          <div class="adv__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7zm0 4a3 3 0 0 1 3 3c0 1.3-.8 2.4-2 2.8V17h-2v-5.2A3 3 0 0 1 9 9a3 3 0 0 1 3-3z"/></svg>
+          </div>
+          <h3>Професійно</h3>
+          <p>Досвідчені майстри та сучасне обладнання для будь-яких задач.</p>
+        </div>
+        <div class="adv reveal" style="--d:.35s">
+          <div class="adv__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5zm4 8-5.3 5.3L8 11.6l1.4-1.4 1.3 1.3L14.6 7.6z"/></svg>
+          </div>
+          <h3>Під ключ</h3>
+          <p>Беремо на себе весь цикл — від проєкту до здачі об'єкта.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VACANCY ============ -->
+  <section class="vacancy" id="vacancy">
+    <div class="container vacancy__inner reveal">
+      <div class="vacancy__text">
+        <span class="section__tag section__tag--light">Вакансії</span>
+        <h2 class="section__title section__title--light">Приєднуйся до <span>команди</span></h2>
+        <p>
+          Якщо Вам потрібна робота і ви майстер чи професіонал з будь-яких будівельних робіт —
+          ми пропонуємо стати частиною нашої команди. Ви можете подзвонити нам або залишити
+          заявку у Telegram.
+        </p>
+      </div>
+      <div class="vacancy__cta">
+        <a href="https://t.me/kozak_servis" target="_blank" rel="noopener" class="btn btn--white">Залишити заявку</a>
+        <a href="tel:0986675972" class="vacancy__phone">098 667 59 72</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTS / FOOTER ============ -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--footer">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="36" height="36">
+              <rect width="40" height="40" rx="9" fill="#e11212"/>
+              <path d="M20 6l3.6 7.4L32 14.5l-5.8 5.5 1.4 8L20 24.1 12.4 28l1.4-8L8 14.5l8.4-1.1z" fill="#fff"/>
+            </svg>
+          </span>
+          <span class="logo__text">КОЗАК</span>
+        </a>
+        <p>Сервіс будівельних послуг.<br>Швидко / Надійно / Професійно.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Контакти</h4>
+        <a href="tel:0986675972" class="footer__link">098 667 59 72</a>
+        <a href="https://t.me/kozak_servis" target="_blank" rel="noopener" class="footer__link">Telegram</a>
+        <a href="https://wa.me/message/QPN5Q3EQSAKFM1" target="_blank" rel="noopener" class="footer__link">WhatsApp</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Послуги</h4>
+        <a href="#services" class="footer__link">Електрика</a>
+        <a href="#services" class="footer__link">Генератори та інвертори</a>
+        <a href="#services" class="footer__link">Газифікація</a>
+        <a href="#services" class="footer__link">Будівельні роботи</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© <span id="year">2026</span> Майстер Козак. Усі права захищені.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-group">
+    <a href="https://wa.me/message/QPN5Q3EQSAKFM1" target="_blank" rel="noopener" class="fab" aria-label="Написати у WhatsApp">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.86 9.86 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.13c-.24.68-1.4 1.3-1.93 1.38-.5.07-1.12.1-1.8-.11-.42-.13-.95-.31-1.64-.61-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.97 0-1.41.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.22 1.37.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.36-.23.61-.14.25.09 1.6.75 1.87.89.28.14.46.21.53.32.07.11.07.64-.17 1.32z"/></svg>
+    </a>
+    <a href="https://t.me/kozak_servis" target="_blank" rel="noopener" class="fab" aria-label="Написати в Telegram">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M21.9 4.3 2.9 11.6c-1 .4-1 1.8.1 2.1l4.8 1.5 1.8 5.7c.3.9 1.4 1.1 2 .4l2.6-2.6 4.7 3.5c.7.5 1.7.1 1.9-.7L23 5.6c.2-1-.7-1.7-1.1-1.3zM9.7 14.6l8.4-5.3-6.9 6.3-.2 3.2z"/></svg>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
