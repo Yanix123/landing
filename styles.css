@@ -136,6 +136,7 @@ img, svg { display: block; max-width: 100%; }
   max-width: 540px; margin: 18px 0 0; color: #333; font-size: 17px; font-weight: 500;
 }
 .hero__cta { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 32px; }
+.hero__messengers { display: flex; gap: 16px; flex-wrap: nowrap; }
 
 /* Tablet & mobile: strengthen scrim so text stays readable over the photo */
 @media (max-width: 860px) {
